@@ -9,7 +9,7 @@
         <meta name="description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
         <meta name="keywords" content="wordpress checklist, wordpress audit, site audit, web performance checklist, web accessibility checklist, html checklist, css checklit, javascript checklist, frontend checklist, developer checklist">
         
-        <link rel="preload" href="css/style.css" as="style">
+        <link rel="preload" href="css/webfonts.css" as="style">
         <link rel="stylesheet" href="css/style.css">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/imgs/wpauditsite-icon.png">
 
@@ -117,6 +117,43 @@
                     <p>Run your code through the HTML validator and make sure there aren't any glaring errors. Sometimes there will be errors you don't want to fix, and that's okay. Just be sure you're being intentional.</p>
                     <ul>
                         <li><a href="https://validator.w3.org/"> Markup Validation Service</a> – you can run a URL, a file, or copy/pasted code through the checker.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="images" type="checkbox">
+                    <label for="images" class="tickoff"><h4>Tiny tiny images</h4></label>
+                    <p>Optimizing your images, making sure they are as compressed as possible, and lazy loaded when appropriate makes a huge difference for your website speed.</p>
+                    <ul>
+                        <li><a href="https://en-ca.wordpress.org/plugins/autoptimize/">Autoptimizer</a> – great performance plugin with a fantastic Images section to help you lazy load, compress, and serve images from a CDN using ShortPixel.</li>
+                        <li><a href="https://compresspng.com/">Compress PNG</a> – compress your pngs and jpegs with this handy online tool, it works fantastically.</li>
+                        <li><a href="https://imageoptim.com/mac">ImageOptim</a> – Mac utility to quickly compress all image types offline.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="fonts" type="checkbox">
+                    <label for="fonts" class="tickoff"><h4>Webfonts Optimization</h4></label>
+                    <p>Loading your webfonts fast and <em>well</em> is important. Keep those font file sizes low, only add the font styles you are <em>using</em>, use <code>preconnect</code> to load those font files quicker, and avoid <a href="https://css-tricks.com/fout-foit-foft/">the <strong>Flash of Unstyled Text</strong> and <strong>Flash of Invisible Text</strong></a>.</p>
+                    <ul>
+                        <li><a href="https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/">Preconnect fonts</a> – how to get your fonts loading faster.</li>
+                        <li><a href="https://github.com/typekit/webfontloader">WebFont Loader</a> – use this easy-to-use library to finetune the webfonts you're grabbing from different services. </li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="caching" type="checkbox">
+                    <label for="caching" class="tickoff"><h4>Cache your ish</h4></label>
+                    <p>You've heard it before and you'll hear it again. Use caching. There are lots of brilliant plugins out there that help. Great hosts usually provide caching of some kind as well, <em>utilize that</em>.</p>
+                    <ul>
+                        <li><a href="https://en-ca.wordpress.org/plugins/autoptimize/">Autoptomize</a> – this plugin does caching too, and does it well.</li>
+                        <li><a href="https://wp-rocket.me/">WP Rocket</a> – another popular performance plugin that also does caching.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="cdn" type="checkbox">
+                    <label for="cdn" class="tickoff"><h4>CDN (distribute widely, y'all)</h4></label>
+                    <p>If you've got a big site or you want the fastest site possible, use a CDN. Your site will be cached all around the world and served to the viewer from the closest server.</p>
+                    <ul>
+                        <li><a href="https://www.cloudflare.com/en-ca/integrations/wordpress/">CloudFlare</a> – one of the most popular CDNs in the WordPress space, has a fantastic free tier.</li>
+                        <li><a href="hhttps://www.keycdn.com/">Key CDN</a> – a super affordable easy to use CDN.</li>
                     </ul>
                 </article>
             </section>
