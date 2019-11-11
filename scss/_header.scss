@@ -1,0 +1,39 @@
+header.site-header {
+    background: #057B85;
+    color: #fff;
+    padding: 1rem 1rem 0rem 1rem;
+    text-align: center;
+    position: relative;
+    h1 {
+        margin-top: 1rem;
+        img {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+    .button-wrapper {
+        padding-bottom: 0.5rem;
+    }
+    &:after {
+        background: url('../assets/imgs/header-blob2-01.svg') no-repeat center top;
+        background-size: 100%;
+        content: "";
+        height: 100%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: -1px;
+//        z-index: -10;
+    }
+}
+
+main {
+    margin-top: 10rem;
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+    main {
+        padding: 0 2rem;
+    }
+}

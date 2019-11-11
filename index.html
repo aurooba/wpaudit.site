@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WPAudit – WordPress Website Audit Checklist</title>
+        <meta name="title" content="WPAudit – WordPress Website Audit Checklist">
+        <meta name="description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
+        <meta name="keywords" content="wordpress checklist, wordpress audit, site audit, web performance checklist, web accessibility checklist, html checklist, css checklit, javascript checklist, frontend checklist, developer checklist">
+        
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/imgs/wpauditsite-icon.png">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://wpaudit.site/">
+        <meta property="og:title" content="WordPress Website Audit Checklist">
+        <meta property="og:description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
+        <meta property="og:image" content="assets/imgs/logo.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://wpaudit.site/">
+        <meta property="twitter:title" content="WordPress Website Audit Checklist">
+        <meta property="twitter:description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
+        <meta property="twitter:image" content="assets/imgs/logo.jpg">
+        
+        <meta property="copyright" content="GPL License, created by Aurooba Ahmed">
+        <link rel="shortcut icon" href="assets/imgs/favicon.png">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1><img src="assets/imgs/logo-transparent.png" alt="WP Audit Site"></h1>
+            <h2>Quickly audit your WordPress website.</h2>
+            <p>A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.</p>
+            <p>Best used before a launch or on a monthly basis.</p>
+            <div class="button-wrapper"><a href="/audit-for-you.html" class="button">Or I can do it for you.</a></div>
+        </header>
+        <main>
+            <input id="formatting-seo" type="checkbox" class="section">
+            <label for="formatting-seo" class="section-header"><h3>Formatting + SEO</h3></label>
+            <section class="formatting" aria-label="Formatting">
+                <article  class="checklist-item">
+                    <input id="language" type="checkbox">
+                    <label for="language" class="tickoff"><h4>Language</h4></label>
+                    <p>Make sure <code>language_attributes()</code> is set in HTML.</p>
+                    <ul>
+                        <li>Read the docs for <a href="https://developer.wordpress.org/reference/functions/language_attributes/">language attributes</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="seo" type="checkbox">
+                    <label for="seo" class="tickoff"><h4>SEO</h4></label>
+                    <p>Install an SEO plugin to make it easy to maintain and modify SEO information. Make sure you fill out all the open graph information and basic title, description, and image fields. Consider using one of the following plugins:</p>
+                    <ul>
+                        <li><a href="https://en-ca.wordpress.org/plugins/wordpress-seo/">Yoast SEO</a></li>
+                        <li><a href="https://en-ca.wordpress.org/plugins/all-in-one-seo-pack/">All in one SEO</a></li>
+                        <li><a href="https://en-ca.wordpress.org/plugins/autodescription/">The SEO Framework</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="metatags" type="checkbox">
+                    <label for="metatags" class="tickoff"><h4>Check yo meta tags</h4></label>
+                    <p>If you've got an SEO plugin installed and properly configured, you should be fine, but double check those tags with the meta tag checker and adjust accordingly.</p>
+                    <ul>
+                        <li><a href="https://www.heymeta.com">Hey Meta</a> – shows you how your site looks on social and what your basic meta tags have.</li>
+                        <li><a href="https://developers.facebook.com/tools/debug/sharing/">Facebook debugger</a> – shows you exactly how your site appears on facebook and lets you refresh Facebook's data if you've just changed it.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="links" type="checkbox">
+                    <label for="links" class="tickoff"><h4>Link check</h4></label>
+                    <p>Make sure you don't have any broken links lingering on the site. A common culprit is changing slugs after a post has been published. Although WordPress auto-magically can catch a few of those, it's helpful to have a plugin that does even more:</p>
+                    <ul>
+                        <li><a href="https://en-ca.wordpress.org/plugins/redirection/">Redirection</a> – This plugin checks 404s, catches slug changes and sets automatic redirects, lets you add custom redirects, etc. It's a must-have.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="favicon" type="checkbox">
+                    <label for="favicon" class="tickoff"><h4>Favicon</h4></label>
+                    <p>Is your favicon set? Go to <em>Appearance</em> > <em>Customize</em> > <em>Site Identity</em> and set that <strong>Site Icon</strong>. It'll take care of your favicon and the app icon (in case someone saves your site to their iPhone/Android screen!).</p>
+                    <ul>
+                        <li><a href="https://wordpress.org/support/article/creating-a-favicon/">Step by step directions</a> on how to set your Site Icon</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="responsive" type="checkbox">
+                    <label for="responsive" class="tickoff"><h4>Responsive design</h4></label>
+                    <p>Is your website responsive? It should be responsive! Use CSS Media queries in your code, make sure zoom is <em>not</em> disabled, and test your site in responsive mode with your browser Developer Tools</p>
+                    <ul>
+                        <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Responsive Web Design</a> – a fantastic introduction to responsive design by Smashing Magazine.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">CSS Media Queries</a> – a helpful reference on how to use them handy queries!</li>
+                        <li><a href="https://search.google.com/test/mobile-friendly">Test your site</a> – with the Mobile Friendly test by Google</li>
+                        <li><a href="https://adrianroselli.com/2015/10/dont-disable-zoom.html">Don't Disable Zoom</a> – read this article on why disabling zoom is bad bad bad.</li>
+                    </ul>
+                </article>
+
+            </section>
+            
+            <input id="performance" type="checkbox" class="section">
+            <label for="performance" class="section-header"><h3>Performance</h3></label>
+            <section class="performance" aria-label="Performance">
+                <article class="checklist-item">
+                    <input id="gzip" type="checkbox">
+                    <label for="gzip" class="tickoff"><h4>GZip Compression</h4></label>
+                    <p>Is your website using Gzip compression? Gzip is a way of smartly compressing data so your website loads faster. Modern browsers automatically request the Gzip version of your website first.</p> <p>Most WordPress-friendly hosts already have Gzip turned on, but you should double check. If you don't have it turned on at the server level, you can use a plugin to do so:</p>
+                    <ul>
+                        <li><a href="https://www.giftofspeed.com/gzip-test/">Gzip Compression checker</a> – quickly check if your website is already gzipped.</li>
+                        <li><a href="https://torquemag.io/2016/04/enable-gzip-compression-wordpress/">How To Easily Enable Gzip Compression For WordPress</a> – helpful article that explains why in detail why Gzip is awesome and how to do it.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="validhtml" type="checkbox">
+                    <label for="validhtml" class="tickoff"><h4>Valid HTML</h4></label>
+                    <p>Run your code through the HTML validator and make sure there aren't any glaring errors. Sometimes there will be errors you don't want to fix, and that's okay. Just be sure you're being intentional.</p>
+                    <ul>
+                        <li><a href="https://validator.w3.org/"> Markup Validation Service</a> – you can run a URL, a file, or copy/pasted code through the checker.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <input id="a11y" type="checkbox" class="section">
+            <label for="a11y" class="section-header"><h3>Accessibility</h3></label>
+            <section class="a11y" aria-label="Accessibility">
+
+            </section>
+
+            <input id="security" type="checkbox" class="section">
+            <label for="security" class="section-header"><h3>Security</h3></label>
+            <section class="security" aria-label="security">
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 <a href="https://auroobaahmed.com">Aurooba Ahmed</a></p>
+            <p><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a> – do what you want, give some credit, any derivatives must also be GPLv3.</p>
+        </footer>
+        <script src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+    </body>
+</html>
