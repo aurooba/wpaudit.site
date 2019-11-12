@@ -29,6 +29,15 @@
         
         <meta property="copyright" content="GPL License, created by Aurooba Ahmed">
         <link rel="shortcut icon" href="assets/imgs/favicon.png">
+        <script>
+          (function (w,d,s,o,f,js,fjs) {
+          w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+          js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+          js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+          }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
+
+          plausible('page')
+        </script>
     </head>
     <body>
         <header class="site-header">
@@ -72,7 +81,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="links" type="checkbox">
-                    <label for="links" class="tickoff"><h4>Link check</h4></label>
+                    <label for="links" class="tickoff"><h4>Links check</h4></label>
                     <p>Make sure you don't have any broken links lingering on the site. A common culprit is changing slugs after a post has been published. Although WordPress auto-magically can catch a few of those, it's helpful to have a plugin that does even more:</p>
                     <ul>
                         <li><a href="https://en-ca.wordpress.org/plugins/redirection/">Redirection</a> – This plugin checks 404s, catches slug changes and sets automatic redirects, lets you add custom redirects, etc. It's a must-have.</li>
@@ -272,7 +281,7 @@
                 <article class="checklist-item">
                     <input id="ssl" type="checkbox">
                     <label for="ssl" class="tickoff"><h4>SSL: Secure yer site!</h4></label>
-                    <p>Let's Encrypt exists! It's free! If your host doesn't support it <strong>change hosts</strong>.</p>
+                    <p>Let's Encrypt exists! It's free! If your host doesn't support it, <strong>change hosts</strong>.</p>
                     <ul>
                         <li><a href="https://webaim.org/techniques/sitetools/#siteindex">Sitemaps explained</a></li>
                     </ul>
