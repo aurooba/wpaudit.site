@@ -1,6 +1,6 @@
 WPAudit.site
 ===================================
-####Last updated: Nov 11, 2019
+#### Last updated: Nov 11, 2019
 
 A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.
 
