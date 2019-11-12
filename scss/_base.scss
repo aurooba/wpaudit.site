@@ -2,6 +2,11 @@ body {
     background: #ECECEC;
 }
 
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .button {
     display: inline-block;
     border: 1px solid #fff;
@@ -15,5 +20,21 @@ body {
         border: 1px solid #fff;
         background: transparent;
         color: #fff;
+    }
+}
+
+a.skip-link, a.skip-link:visited  {
+    background: #fff;
+    color: #057B85;
+    left: -9999px;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    z-index: -10;
+    font-weight: bold;
+    display: block;
+    &:focus {
+        left: 1rem;
+        z-index: 100;
     }
 }

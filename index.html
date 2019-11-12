@@ -32,13 +32,14 @@
     </head>
     <body>
         <header class="site-header">
-            <h1><img src="assets/imgs/logo-transparent.png" alt="WP Audit Site"></h1>
+            <h1><a href="/"><img src="assets/imgs/logo-transparent.png" alt="WP Audit Site"></a></h1>
+            <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
             <h2>Quickly audit your WordPress website.</h2>
             <p>A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.</p>
             <p>Best used before a launch or on a monthly basis.</p>
-            <div class="button-wrapper"><a href="/audit-for-you.html" class="button">Or I can do it for you.</a></div>
+            <div class="button-wrapper"><a href="/audit.html" class="button">Or I can do it for you.</a></div>
         </header>
-        <main>
+        <main id="main">
             <input id="formatting-seo" type="checkbox" class="section">
             <label for="formatting-seo" class="section-header"><h3>Formatting + SEO</h3></label>
             <section class="formatting" aria-label="Formatting">
@@ -156,12 +157,116 @@
                         <li><a href="hhttps://www.keycdn.com/">Key CDN</a> – a super affordable easy to use CDN.</li>
                     </ul>
                 </article>
+                <article class="checklist-item">
+                    <input id="httprequests" type="checkbox">
+                    <label for="httprequests" class="tickoff"><h4>Minimize HTTP requests</h4></label>
+                    <p>The more files you have and the bigger they are, the more HTTP requests you'll have. So minimize those files and get rid of anything unnecessary.</p>
+                    <ul>
+                        <li><a href="https://wp-rocket.me/blog/reduce-http-requests-speed-wordpress-site/">How to Reduce HTTP Requests to Speed Up Your WordPress Site</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="gtmetrix" type="checkbox">
+                    <label for="gtmetrix" class="tickoff"><h4>Run GTmetrix</h4></label>
+                    <p>Run your site through GTmetrix to check for any other glaring issues you may have missed.</p>
+                    <ul>
+                        <li><a href="http://gtmetrix.com/">GTmetrix</a></li>
+                    </ul>
+                </article>
             </section>
 
             <input id="a11y" type="checkbox" class="section">
             <label for="a11y" class="section-header"><h3>Accessibility</h3></label>
             <section class="a11y" aria-label="Accessibility">
-
+                <article class="checklist-item">
+                    <input id="sitemap" type="checkbox">
+                    <label for="sitemap" class="tickoff"><h4>Do ya have a sitemap?</h4></label>
+                    <p>If you configured an SEO plugin, you probably have one (or more). Go to <code>yourdomain.com/sitemap.xml</code> and make sure you have one!</p>
+                    <ul>
+                        <li><a href="https://webaim.org/techniques/sitetools/#siteindex">Sitemaps explained</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="404" type="checkbox">
+                    <label for="404" class="tickoff"><h4>404 Template</h4></label>
+                    <p>Make sure you have a <em>useful</em> 404 template.</p> <p>Helpful things to add: a search form, popular pages/articles, contact information.</p>
+                    <ul>
+                        <li><a href="https://developer.wordpress.org/themes/functionality/404-pages/">Guide to creating 404 pages</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="search-page" type="checkbox">
+                    <label for="search-page" class="tickoff"><h4>Search page</h4></label>
+                    <p>There's no standard search template in WordPress, but <em>you should create one</em>. The ideal slug is <code>/search</code> so if someone needs to do a search, they can get there.</p>
+                    <p>While we're on the topic, make sure <code>search.php</code> (the search results page) is also properly set up.</p>
+                    <ul>
+                        <li><a href="https://codex.wordpress.org/Creating_a_Search_Page">Creating a search page</a></li>
+                        <li><a href="https://themeshaper.com/2012/11/06/the-wordpress-theme-search-template-and-page-template/">A simple search results template guide</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="contrast" type="checkbox">
+                    <label for="contrast" class="tickoff"><h4>Colour Contrast Check</h4></label>
+                    <p>Simplest way to do this is to add the following:</p>
+                    <pre><code>body { filter: filter: grayscale(100%); }</code></pre>
+                    <p>But there are tools to help you too!</p>
+                    <ul>
+                        <li><a href="hhttps://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph">High Contrast add-on</a></li>
+                        <li><a href="http://www.checkmycolours.com/">Check my colours</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="keyboard" type="checkbox">
+                    <label for="keyboard" class="tickoff"><h4>Keyboard navigation</h4></label>
+                    <p>Can you tab through everything and take the actions you want to take on your website? If you can't, fix it!</p>
+                    <ul>
+                        <li><a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a></li>
+                        <li><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="checkboxes" type="checkbox">
+                    <label for="checkboxes" class="tickoff"><h4>Make those pseudo inputs accessible!</h4></label>
+                    <p>Adding this <strong>specifically</strong>, because it's often overlooked. I know we all hate the default checkboxes and radio buttons. It's totally okay to use pseudo classes to style a fancier version, but let's make sure they are keyboard accessible, yeah?</p>
+                    <ul>
+                        <li><a href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes">Create custom accessible checkboxes</a> – works for radio buttons too</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="underline" type="checkbox">
+                    <label for="underline" class="tickoff"><h4>Make those pseudo inputs accessible!</h4></label>
+                    <blockquote>"Underline your fucking links you sociopaths."<cite>— Heydon Pickering</cite></blockquote>
+                    <p><em>Yes</em>, you can use borders instead of <code>text-decoration: underline;</code>.</p>
+                    <ul>
+                        <li><a href="https://adrianroselli.com/2019/01/underlines-are-beautiful.html">Underlines are beautiful</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="skip" type="checkbox">
+                    <label for="skip" class="tickoff"><h4>Skip to content link, please!</h4></label>
+                    <p>Make sure you have a <em>skip to content</em> link that shows up when that link comes into focus.</p> 
+                    <p>Doesn't have to be super fancy. Check the source for the one on this page – super simple, takes 2 minutes to implement.</p>
+                    <ul>
+                        <li><a href="https://webaim.org/techniques/skipnav/">Skip to content techniques</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="alttext" type="checkbox">
+                    <label for="alttext" class="tickoff"><h4>Alt text, pretty please.</h4></label>
+                    <p>Make sure your images have <code>alt</code> tags with helpful descriptions and maybe some context too.</p>
+                    <ul>
+                        <li><a href="https://www.seoptimer.com/alt-tag-checker">Alt Tag checker</a> – works on a single url basis.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="lighthouse" type="checkbox">
+                    <label for="lighthouse" class="tickoff"><h4>Run a Lighthouse check</h4></label>
+                    <p>Lighthouse is Google's website checking tool; it tests performance, accessibility, etc. It's built into Chrome, if you don't use Chrome, PageSpeed Insights is Lighthouse in a Web UI.</p>
+                    <ul>
+                        <li><a href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a></li>
+                        <li><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
+                    </ul>
+                </article>
             </section>
 
             <input id="security" type="checkbox" class="section">
@@ -169,11 +274,40 @@
             <section class="security" aria-label="security">
 
             </section>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Yay!</h2>
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <div class="content">
+                        You've completed the <em>entire</em> checklist! Look at you, you amazing human!
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <p>&copy; 2019 <a href="https://auroobaahmed.com">Aurooba Ahmed</a></p>
             <p><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a> – do what you want, give some credit, any derivatives must also be GPLv3.</p>
         </footer>
+        <script>
+            function closePopup() {
+                var element = document.getElementsByClassName("overlay");
+                console.log(element);
+                element[0].classList.remove("show");
+            }
+        </script>
+        <script async>
+            document.addEventListener('DOMContentLoaded', function() {
+                jQuery(".checklist-item input[type='checkbox']").change(function(){
+                    var a = jQuery(".checklist-item input[type='checkbox']");
+                    if(a.length == a.filter(":checked").length){
+                        setTimeout(function(){
+                            jQuery("#popup1").addClass("show");
+                        }, 400);
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript" src="/assets/jquery.min.js" defer></script>
         <script src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     </body>
 </html>
