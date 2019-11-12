@@ -7,6 +7,13 @@ main {
     margin: 0 auto;
 }
 
+main.audit {
+    max-width: 700px;
+    p {
+        margin-left: 0;
+    }
+}
+
 .button {
     display: inline-block;
     border: 1px solid #fff;

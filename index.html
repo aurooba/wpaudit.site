@@ -33,13 +33,13 @@
     <body>
         <header class="site-header">
             <h1><a href="/"><img src="assets/imgs/logo-transparent.png" alt="WP Audit Site"></a></h1>
-            <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+            <a class="skip-link screen-reader-text" href="#main">Skip to content (press enter)</a>
             <h2>Quickly audit your WordPress website.</h2>
             <p>A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.</p>
             <p>Best used before a launch or on a monthly basis.</p>
             <div class="button-wrapper"><a href="/audit.html" class="button">Or I can do it for you.</a></div>
         </header>
-        <main id="main">
+        <main id="main grid">
             <input id="formatting-seo" type="checkbox" class="section">
             <label for="formatting-seo" class="section-header"><h3>Formatting + SEO</h3></label>
             <section class="formatting" aria-label="Formatting">
@@ -234,9 +234,9 @@
                 </article>
                 <article class="checklist-item">
                     <input id="underline" type="checkbox">
-                    <label for="underline" class="tickoff"><h4>Make those pseudo inputs accessible!</h4></label>
-                    <blockquote>"Underline your fucking links you sociopaths."<cite>— Heydon Pickering</cite></blockquote>
+                    <label for="underline" class="tickoff"><h4>Do them links look like links?</h4></label>
                     <p><em>Yes</em>, you can use borders instead of <code>text-decoration: underline;</code>.</p>
+                    <blockquote>"Underline your fucking links you sociopaths."<cite>— Heydon Pickering</cite></blockquote>
                     <ul>
                         <li><a href="https://adrianroselli.com/2019/01/underlines-are-beautiful.html">Underlines are beautiful</a></li>
                     </ul>
@@ -272,7 +272,66 @@
             <input id="security" type="checkbox" class="section">
             <label for="security" class="section-header"><h3>Security</h3></label>
             <section class="security" aria-label="security">
-
+                <article class="checklist-item">
+                    <input id="ssl" type="checkbox">
+                    <label for="ssl" class="tickoff"><h4>SSL: Secure yer site!</h4></label>
+                    <p>Let's Encrypt exists! It's free! If your host doesn't support it <strong>change hosts</strong>.</p>
+                    <ul>
+                        <li><a href="https://webaim.org/techniques/sitetools/#siteindex">Sitemaps explained</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="backups" type="checkbox">
+                    <label for="backups" class="tickoff"><h4>Regular backups</h4></label>
+                    <p>You should have regular backups of your website <em>and</em> regular <strong>off-site</strong> backups of your website. Backups on your normal server won't be of any help to you if your server crashes.</p>
+                    <ul>
+                        <li><a href="https://www.wpbeginner.com/plugins/7-best-wordpress-backup-plugins-compared-pros-and-cons/">WordPress backup services</a></li>
+                        <li><a href="https://aurooba.com/website-support/">Monthly website maintenance + support</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="latestwp" type="checkbox">
+                    <label for="latestwp" class="tickoff"><h4>Are you on the latest and greatest WordPress version?</h4></label>
+                    <p>Keeping your WordPress installation updated is a big part of keeping your site safe!</p>
+                    <ul>
+                        <li><a href="https://hosting.review/ca/tutorial/check-wordpress-version/">How to find your WordPress installation version</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="noadmin" type="checkbox">
+                    <label for="noadmin" class="tickoff"><h4>No <em>admin</em> user.</h4></label>
+                    <p>Keep your site safe from a common brute attack: don't use the username <em>admin</em>.</p>
+                    <ul>
+                        <li><a href="https://make.wordpress.org/support/user-manual/customizing-wordpress/managing-users-on-your-wordpress-site/adding-users-to-your-wordpress-site/">Create new users on WordPress</a></li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="unused" type="checkbox">
+                    <label for="unused" class="tickoff"><h4>Delete inactive themes and plugins</h4></label>
+                    <p>Delete all themes you aren't using, except for one default (twenty *) theme; comes in handy when you're debugging weird issues. Get rid of any plugins you don't need!</p>
+                    <ul>
+                        <li><a href="https://kinsta.com/blog/wordpress-delete-theme/">Delete WordPress themes</a></li>
+                        <li>Dashboard > Plugins, click delete under any plugin you don't use.</li>
+                    </ul>
+                </article>
+                <article class="checklist-item">
+                    <input id="update" type="checkbox">
+                    <label for="update" class="tickoff"><h4>Update themes and plugins</h4></label>
+                    <p>Keep all your themes and plugins updated. But make sure to backup first and ideally test your updates on a staging server first.</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="strongp" type="checkbox">
+                    <label for="strongp" class="tickoff"><h4>Use Strong Passwords </h4></label>
+                    <p>Use strong passwords! Advise your clients to use strong passwords too!</p>
+                </article>
+                <article class="checklist-item">
+                    <input id="limitlogin" type="checkbox">
+                    <label for="limitlogin" class="tickoff"><h4>Limit Login Attempts</h4></label>
+                    <p>Super helpful, can stop lots of attacks in their tracks.</p>
+                    <ul>
+                        <li><a href="https://wordpress.org/plugins/limit-login-attempts-reloaded/">Limit login attempts plugin</a></li>
+                    </ul>
+                </article>
             </section>
             <div id="popup1" class="overlay">
                 <div class="popup">

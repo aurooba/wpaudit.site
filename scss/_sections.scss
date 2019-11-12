@@ -40,7 +40,10 @@ input#security:checked ~ section.security,
     display: none;
 }
 
-section {
+section.formatting,
+section.performance,
+section.a11y,
+section.security {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 50px;
@@ -50,8 +53,11 @@ section {
     
 }
 
-@media only screen and (min-width: 900px) {
-    section {
+@media only screen and (min-width: 850px) {
+    section.formatting,
+    section.performance,
+    section.a11y,
+    section.security {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-gap: 50px;
