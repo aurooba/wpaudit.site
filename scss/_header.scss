@@ -37,3 +37,15 @@ main {
         padding: 0 2rem;
     }
 }
+
+@media only screen and (min-width: 1700px) {
+    main {
+        margin-top: 15rem;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    main {
+        margin-top: 17rem;
+    }
+}
