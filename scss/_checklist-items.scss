@@ -1,7 +1,7 @@
 article.checklist-item {
     background-color: #fff;
     padding: 1rem;
-    h4 {
+    span {
         margin: 0;
         display: inline-block;
     }
@@ -24,8 +24,9 @@ label.tickoff {
     position: relative;
     padding: 1em 0;
     display: block;
-    h4 {
+    span {
         padding-left: 50px;
+        font-weight: bold;
     }
     &:before {
         background-color: #fff;

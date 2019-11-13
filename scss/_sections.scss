@@ -11,8 +11,10 @@
         padding: 0.5rem 1rem;
         transition: 0.5s ease all;
     }
-    h3 {
+    span {
         margin: 0;
+        font-size: 1.17em;
+        font-weight: bold;
     }
     &:hover {
         &:after {

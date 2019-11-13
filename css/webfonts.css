@@ -1,1 +1,20 @@
-@font-face{font-family:"raleway";src:url("../assets/fonts/raleway-bold.woff2") format("woff2"),url("../assets/fonts/raleway-bold.woff") format("woff");font-weight:bold;font-style:normal}@font-face{font-family:"raleway";src:url("../assets/fonts/raleway-regular.woff2") format("woff2"),url("../assets/fonts/raleway-regular.woff") format("woff");font-weight:normal;font-style:normal}@font-face{font-family:"raleway";src:url("../assets/fonts/raleway-italic.woff2") format("woff2"),url("../assets/fonts/raleway-italic.woff") format("woff");font-weight:normal;font-style:italic}/*# sourceMappingURL=webfonts.css.map */
+@font-face {
+  font-family: "raleway";
+  src: url("../assets/fonts/raleway-bold.woff2") format("woff2"), url("../assets/fonts/raleway-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "raleway";
+  src: url("../assets/fonts/raleway-regular.woff2") format("woff2"), url("../assets/fonts/raleway-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "raleway";
+  src: url("../assets/fonts/raleway-italic.woff2") format("woff2"), url("../assets/fonts/raleway-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=webfonts.css.map */
