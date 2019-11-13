@@ -41,7 +41,8 @@
     font-weight: bold;
     text-decoration: none;
     color: #333;
-    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 .popup .close:hover {
   color: #057B85;

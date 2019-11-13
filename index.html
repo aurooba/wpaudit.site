@@ -41,9 +41,9 @@
         </script>
     </head>
     <body>
+        <a rel="noopener" target="_blank" class="skip-link screen-reader-text" href="#main">Skip to content (press enter)</a>
         <header class="site-header">
             <h1><a href="/"><img src="assets/imgs/logo-transparent.png" alt="WP Audit Site"></a></h1>
-            <a rel="noopener" target="_blank" class="skip-link screen-reader-text" href="#main">Skip to content (press enter)</a>
             <article>
                 <h2>Quickly audit your WordPress website.</h2>
                 <p>A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.</p>
@@ -51,13 +51,13 @@
                 <div class="button-wrapper"><a href="/audit.html" class="button">Or I can do it for you.</a></div>
             </article>
         </header>
-        <main id="main grid">
+        <main id="main">
             <input id="formatting-seo" type="checkbox" class="section">
-            <label for="formatting-seo" class="section-header"><h3>Formatting + SEO</h3></label>
-            <section class="formatting" aria-label="Formatting">
+            <label for="formatting-seo" class="section-header"><span role="heading" aria-level="3">Formatting + SEO</span></label>
+            <section class="formatting" aria-label="Formatting Checklist">
                 <article  class="checklist-item">
                     <input id="language" type="checkbox">
-                    <label for="language" class="tickoff"><h4>Language</h4></label>
+                    <label for="language" class="tickoff"><span role="heading" aria-level="4">Language</span></label>
                     <p>Make sure <code>language_attributes()</code> is set in HTML.</p>
                     <ul>
                         <li>Read the docs for <a rel="noopener" target="_blank" href="https://developer.wordpress.org/reference/functions/language_attributes/">language attributes</a></li>
@@ -65,7 +65,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="seo" type="checkbox">
-                    <label for="seo" class="tickoff"><h4>SEO</h4></label>
+                    <label for="seo" class="tickoff"><span role="heading" aria-level="4">SEO</span></label>
                     <p>Install an SEO plugin to make it easy to maintain and modify SEO information. Make sure you fill out all the open graph information and basic title, description, and image fields. Consider using one of the following plugins:</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://en-ca.wordpress.org/plugins/wordpress-seo/">Yoast SEO</a></li>
@@ -75,7 +75,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="metatags" type="checkbox">
-                    <label for="metatags" class="tickoff"><h4>Check yo meta tags</h4></label>
+                    <label for="metatags" class="tickoff"><span role="heading" aria-level="4">Check yo meta tags</span></label>
                     <p>If you've got an SEO plugin installed and properly configured, you should be fine, but double check those tags with the meta tag checker and adjust accordingly.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.heymeta.com">Hey Meta</a> – shows you how your site looks on social and what your basic meta tags have.</li>
@@ -84,7 +84,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="links" type="checkbox">
-                    <label for="links" class="tickoff"><h4>Links check</h4></label>
+                    <label for="links" class="tickoff"><span role="heading" aria-level="4">Links check</span></label>
                     <p>Make sure you don't have any broken links lingering on the site. A common culprit is changing slugs after a post has been published. Although WordPress auto-magically can catch a few of those, it's helpful to have a plugin that does even more:</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://en-ca.wordpress.org/plugins/redirection/">Redirection</a> – This plugin checks 404s, catches slug changes and sets automatic redirects, lets you add custom redirects, etc. It's a must-have.</li>
@@ -92,7 +92,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="favicon" type="checkbox">
-                    <label for="favicon" class="tickoff"><h4>Favicon</h4></label>
+                    <label for="favicon" class="tickoff"><span role="heading" aria-level="4">Favicon</span></label>
                     <p>Is your favicon set? Go to <em>Appearance</em> > <em>Customize</em> > <em>Site Identity</em> and set that <strong>Site Icon</strong>. It'll take care of your favicon and the app icon (in case someone saves your site to their iPhone/Android screen!).</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://wordpress.org/support/article/creating-a-favicon/">Step by step directions</a> on how to set your Site Icon</li>
@@ -100,7 +100,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="responsive" type="checkbox">
-                    <label for="responsive" class="tickoff"><h4>Responsive design</h4></label>
+                    <label for="responsive" class="tickoff"><span role="heading" aria-level="4">Responsive design</span></label>
                     <p>Is your website responsive? It should be responsive! Use CSS Media queries in your code, make sure zoom is <em>not</em> disabled, and test your site in responsive mode with your browser Developer Tools</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Responsive Web Design</a> – a fantastic introduction to responsive design by Smashing Magazine.</li>
@@ -113,11 +113,11 @@
             </section>
             
             <input id="performance" type="checkbox" class="section">
-            <label for="performance" class="section-header"><h3>Performance</h3></label>
-            <section class="performance" aria-label="Performance">
+            <label for="performance" class="section-header"><span role="heading" aria-level="3">Performance</span></label>
+            <section class="performance" aria-label="Performance Checklist">
                 <article class="checklist-item">
                     <input id="gzip" type="checkbox">
-                    <label for="gzip" class="tickoff"><h4>GZip Compression</h4></label>
+                    <label for="gzip" class="tickoff"><span role="heading" aria-level="4">GZip Compression</span></label>
                     <p>Is your website using Gzip compression? Gzip is a way of smartly compressing data so your website loads faster. Modern browsers automatically request the Gzip version of your website first.</p> <p>Most WordPress-friendly hosts already have Gzip turned on, but you should double check. If you don't have it turned on at the server level, you can use a plugin to do so:</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.giftofspeed.com/gzip-test/">Gzip Compression checker</a> – quickly check if your website is already gzipped.</li>
@@ -126,7 +126,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="validhtml" type="checkbox">
-                    <label for="validhtml" class="tickoff"><h4>Valid HTML</h4></label>
+                    <label for="validhtml" class="tickoff"><span role="heading" aria-level="4">Valid HTML</span></label>
                     <p>Run your code through the HTML validator and make sure there aren't any glaring errors. Sometimes there will be errors you don't want to fix, and that's okay. Just be sure you're being intentional.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://validator.w3.org/"> Markup Validation Service</a> – you can run a URL, a file, or copy/pasted code through the checker.</li>
@@ -134,7 +134,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="images" type="checkbox">
-                    <label for="images" class="tickoff"><h4>Tiny tiny images</h4></label>
+                    <label for="images" class="tickoff"><span role="heading" aria-level="4">Tiny tiny images</span></label>
                     <p>Optimizing your images, making sure they are as compressed as possible, and lazy loaded when appropriate makes a huge difference for your website speed.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://en-ca.wordpress.org/plugins/autoptimize/">Autoptimizer</a> – great performance plugin with a fantastic Images section to help you lazy load, compress, and serve images from a CDN using ShortPixel.</li>
@@ -145,7 +145,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="fonts" type="checkbox">
-                    <label for="fonts" class="tickoff"><h4>Webfonts Optimization</h4></label>
+                    <label for="fonts" class="tickoff"><span role="heading" aria-level="4">Webfonts Optimization</span></label>
                     <p>Loading your webfonts fast and <em>well</em> is important. Keep those font file sizes low, only add the font styles you are <em>using</em>, use <code>preconnect</code> to load those font files quicker, and avoid <a rel="noopener" target="_blank" href="https://css-tricks.com/fout-foit-foft/">the <strong>Flash of Unstyled Text</strong> and <strong>Flash of Invisible Text</strong></a>.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/">Preconnect fonts</a> – how to get your fonts loading faster.</li>
@@ -154,7 +154,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="caching" type="checkbox">
-                    <label for="caching" class="tickoff"><h4>Cache your ish</h4></label>
+                    <label for="caching" class="tickoff"><span role="heading" aria-level="4">Cache your ish</span></label>
                     <p>You've heard it before and you'll hear it again. Use caching. There are lots of brilliant plugins out there that help. Great hosts usually provide caching of some kind as well, <em>utilize that</em>.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://en-ca.wordpress.org/plugins/autoptimize/">Autoptomize</a> – this plugin does caching too, and does it well.</li>
@@ -163,7 +163,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="cdn" type="checkbox">
-                    <label for="cdn" class="tickoff"><h4>CDN (distribute widely, y'all)</h4></label>
+                    <label for="cdn" class="tickoff"><span role="heading" aria-level="4">CDN (distribute widely, y'all)</span></label>
                     <p>CDN = content delivery network. If you've got a big site or you want the fastest site possible, use a CDN. Your site will be cached all around the world and served to the viewer from the closest server.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.cloudflare.com/en-ca/integrations/wordpress/">CloudFlare</a> – one of the most popular CDNs in the WordPress space, has a fantastic free tier.</li>
@@ -172,7 +172,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="httprequests" type="checkbox">
-                    <label for="httprequests" class="tickoff"><h4>Minimize HTTP requests</h4></label>
+                    <label for="httprequests" class="tickoff"><span role="heading" aria-level="4">Minimize HTTP requests</span></label>
                     <p>The more files you have and the bigger they are, the more HTTP requests you'll have. So minimize those files and get rid of anything unnecessary.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://wp-rocket.me/blog/reduce-http-requests-speed-wordpress-site/">How to Reduce HTTP Requests to Speed Up Your WordPress Site</a></li>
@@ -180,7 +180,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="gtmetrix" type="checkbox">
-                    <label for="gtmetrix" class="tickoff"><h4>Run GTmetrix</h4></label>
+                    <label for="gtmetrix" class="tickoff"><span role="heading" aria-level="4">Run GTmetrix</span></label>
                     <p>Run your site through GTmetrix to check for any other glaring issues you may have missed.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="http://gtmetrix.com/">GTmetrix</a></li>
@@ -189,11 +189,11 @@
             </section>
 
             <input id="a11y" type="checkbox" class="section">
-            <label for="a11y" class="section-header"><h3>Accessibility</h3></label>
-            <section class="a11y" aria-label="Accessibility">
+            <label for="a11y" class="section-header"><span role="heading" aria-level="3">Accessibility</span></label>
+            <section class="a11y" aria-label="Accessibility Checklist">
                 <article class="checklist-item">
                     <input id="sitemap" type="checkbox">
-                    <label for="sitemap" class="tickoff"><h4>Do ya have a sitemap?</h4></label>
+                    <label for="sitemap" class="tickoff"><span role="heading" aria-level="4">Do ya have a sitemap?</span></label>
                     <p>If you configured an SEO plugin, you probably have one (or more). Go to <code>yourdomain.com/sitemap.xml</code> and make sure you have one!</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://webaim.org/techniques/sitetools/#siteindex">Sitemaps explained</a></li>
@@ -201,7 +201,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="404" type="checkbox">
-                    <label for="404" class="tickoff"><h4>404 Template</h4></label>
+                    <label for="404" class="tickoff"><span role="heading" aria-level="4">404 Template</span></label>
                     <p>Make sure you have a <em>useful</em> 404 template.</p> <p>Helpful things to add: a search form, popular pages/articles, contact information.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://developer.wordpress.org/themes/functionality/404-pages/">Guide to creating 404 pages</a></li>
@@ -209,7 +209,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="search-page" type="checkbox">
-                    <label for="search-page" class="tickoff"><h4>Search page</h4></label>
+                    <label for="search-page" class="tickoff"><span role="heading" aria-level="4">Search page</span></label>
                     <p>There's no standard search template in WordPress, but <em>you should create one</em>. The ideal slug is <code>/search</code> so if someone needs to do a search, they can get there.</p>
                     <p>While we're on the topic, make sure <code>search.php</code> (the search results page) is also properly set up.</p>
                     <ul>
@@ -219,7 +219,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="contrast" type="checkbox">
-                    <label for="contrast" class="tickoff"><h4>Colour Contrast Check</h4></label>
+                    <label for="contrast" class="tickoff"><span role="heading" aria-level="4">Colour Contrast Check</span></label>
                     <p>Simplest way to do this is to add the following:</p>
                     <pre><code>body { filter: grayscale(100%); }</code></pre>
                     <p>But there are tools to help you too!</p>
@@ -230,12 +230,12 @@
                 </article>
                 <article class="checklist-item">
                     <input id="keyboard" type="checkbox">
-                    <label for="keyboard" class="tickoff"><h4>Keyboard navigation</h4></label>
+                    <label for="keyboard" class="tickoff"><span role="heading" aria-level="4">Keyboard navigation</span></label>
                     <p>Can you tab through everything and take the actions you want to take on your website? If you can't, fix it!</p>
                 </article>
                 <article class="checklist-item">
                     <input id="checkboxes" type="checkbox">
-                    <label for="checkboxes" class="tickoff"><h4>Make those pseudo inputs accessible!</h4></label>
+                    <label for="checkboxes" class="tickoff"><span role="heading" aria-level="4">Make those pseudo inputs accessible!</span></label>
                     <p>Adding this <strong>specifically</strong>, because it's often overlooked. I know we all hate the default checkboxes and radio buttons. It's totally okay to use pseudo classes to style a fancier version, but let's make sure they are keyboard accessible, yeah?</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes">Create custom accessible checkboxes</a> – works for radio buttons too</li>
@@ -243,7 +243,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="underline" type="checkbox">
-                    <label for="underline" class="tickoff"><h4>Do them links look like links?</h4></label>
+                    <label for="underline" class="tickoff"><span role="heading" aria-level="4">Do them links look like links?</span></label>
                     <p><em>Yes</em>, you can use borders instead of <code>text-decoration: underline;</code>.</p>
                     <blockquote>"Underline your fucking links you sociopaths."<cite>— Heydon Pickering</cite></blockquote>
                     <ul>
@@ -252,7 +252,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="skip" type="checkbox">
-                    <label for="skip" class="tickoff"><h4>Skip to content link, please!</h4></label>
+                    <label for="skip" class="tickoff"><span role="heading" aria-level="4">Skip to content link, please!</span></label>
                     <p>Make sure you have a <em>skip to content</em> link that shows up when that link comes into focus.</p> 
                     <p>Doesn't have to be super fancy. Check the source for the one on this page – super simple, takes 2 minutes to implement.</p>
                     <ul>
@@ -261,7 +261,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="alttext" type="checkbox">
-                    <label for="alttext" class="tickoff"><h4>Alt text, pretty please.</h4></label>
+                    <label for="alttext" class="tickoff"><span role="heading" aria-level="4">Alt text, pretty please.</span></label>
                     <p>Make sure your images have <code>alt</code> tags with helpful descriptions and maybe some context too.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.seoptimer.com/alt-tag-checker">Alt Tag checker</a> – works on a single url basis.</li>
@@ -269,7 +269,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="lighthouse" type="checkbox">
-                    <label for="lighthouse" class="tickoff"><h4>Run a Lighthouse check</h4></label>
+                    <label for="lighthouse" class="tickoff"><span role="heading" aria-level="4">Run a Lighthouse check</span></label>
                     <p>Lighthouse is Google's website checking tool; it tests performance, accessibility, etc. It's built into Chrome, if you don't use Chrome, PageSpeed Insights is Lighthouse in a Web UI.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a></li>
@@ -279,11 +279,11 @@
             </section>
 
             <input id="security" type="checkbox" class="section">
-            <label for="security" class="section-header"><h3>Security</h3></label>
-            <section class="security" aria-label="security">
+            <label for="security" class="section-header"><span role="heading" aria-level="3">Security</span></label>
+            <section class="security" aria-label="Security Checklist">
                 <article class="checklist-item">
                     <input id="ssl" type="checkbox">
-                    <label for="ssl" class="tickoff"><h4>SSL: Secure yer site!</h4></label>
+                    <label for="ssl" class="tickoff"><span role="heading" aria-level="4">SSL: Secure yer site!</span></label>
                     <p>Let's Encrypt exists! It's free! If your host doesn't support it, <strong>change hosts</strong>.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.ssl.com/faqs/faq-what-is-ssl/">SSL Explained</a></li>
@@ -292,7 +292,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="backups" type="checkbox">
-                    <label for="backups" class="tickoff"><h4>Regular backups</h4></label>
+                    <label for="backups" class="tickoff"><span role="heading" aria-level="4">Regular backups</span></label>
                     <p>You should have regular backups of your website <em>and</em> regular <strong>off-site</strong> backups of your website. Backups on your normal server won't be of any help to you if your server crashes.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://www.wpbeginner.com/plugins/7-best-wordpress-backup-plugins-compared-pros-and-cons/">WordPress backup services</a></li>
@@ -301,7 +301,7 @@
                 </article>
                 <article class="checklist-item">
                     <input id="latestwp" type="checkbox">
-                    <label for="latestwp" class="tickoff"><h4>Are you on the latest and greatest WordPress version?</h4></label>
+                    <label for="latestwp" class="tickoff"><span role="heading" aria-level="4">Are you on the latest and greatest WordPress version?</span></label>
                     <p>Keeping your WordPress installation updated is a big part of keeping your site safe!</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://hosting.review/ca/tutorial/check-wordpress-version/">How to find your WordPress installation version</a></li>
@@ -309,15 +309,15 @@
                 </article>
                 <article class="checklist-item">
                     <input id="noadmin" type="checkbox">
-                    <label for="noadmin" class="tickoff"><h4>No <em>admin</em> user.</h4></label>
-                    <p>Keep your site safe from a common brute attack: don't use the username <em>admin</em>.</p>
+                    <label for="noadmin" class="tickoff"><span role="heading" aria-level="4">No <em>admin</em> user.</span></label>
+                    <p>Keep your site safe from a common brute force attack: don't use the username <em>admin</em>.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://make.wordpress.org/support/user-manual/customizing-wordpress/managing-users-on-your-wordpress-site/adding-users-to-your-wordpress-site/">Create new users on WordPress</a></li>
                     </ul>
                 </article>
                 <article class="checklist-item">
                     <input id="unused" type="checkbox">
-                    <label for="unused" class="tickoff"><h4>Delete inactive themes and plugins</h4></label>
+                    <label for="unused" class="tickoff"><span role="heading" aria-level="4">Delete inactive themes and plugins</span></label>
                     <p>Delete all themes you aren't using, except for one default (twenty *) theme; comes in handy when you're debugging weird issues. Get rid of any plugins you don't need!</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://kinsta.com/blog/wordpress-delete-theme/">Delete WordPress themes</a></li>
@@ -326,27 +326,27 @@
                 </article>
                 <article class="checklist-item">
                     <input id="update" type="checkbox">
-                    <label for="update" class="tickoff"><h4>Update themes and plugins</h4></label>
+                    <label for="update" class="tickoff"><span role="heading" aria-level="4">Update themes and plugins</span></label>
                     <p>Keep all your themes and plugins updated. But make sure to backup first and ideally test your updates on a staging server first.</p>
                 </article>
                 <article class="checklist-item">
                     <input id="strongp" type="checkbox">
-                    <label for="strongp" class="tickoff"><h4>Use Strong Passwords </h4></label>
+                    <label for="strongp" class="tickoff"><span role="heading" aria-level="4">Use Strong Passwords </span></label>
                     <p>Use strong passwords! Advise your clients to use strong passwords too!</p>
                 </article>
                 <article class="checklist-item">
                     <input id="limitlogin" type="checkbox">
-                    <label for="limitlogin" class="tickoff"><h4>Limit Login Attempts</h4></label>
+                    <label for="limitlogin" class="tickoff"><span role="heading" aria-level="4">Limit Login Attempts</span></label>
                     <p>Super helpful, can stop lots of attacks in their tracks.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://wordpress.org/plugins/limit-login-attempts-reloaded/">Limit login attempts plugin</a></li>
                     </ul>
                 </article>
             </section>
-            <div id="popup1" class="overlay">
+            <div id="popup1" class="overlay" role="alert">
                 <div class="popup">
                     <h2>Yay!</h2>
-                    <span class="close" onclick="closePopup()">&times;</span>
+                    <button class="close" onclick="closePopup()" aria-label="Close Notice">&times;</button>
                     <div class="content">
                         You've completed the <em>entire</em> checklist! Look at you, you amazing human!
                     </div>
@@ -365,19 +365,19 @@
                 element[0].classList.remove("show");
             }
         </script>
-        <script async>
+        <script>
             document.addEventListener('DOMContentLoaded', function() {
                 jQuery(".checklist-item input[type='checkbox']").change(function(){
                     var a = jQuery(".checklist-item input[type='checkbox']");
                     if(a.length == a.filter(":checked").length){
                         setTimeout(function(){
-                            jQuery("#popup1").addClass("show");
+                            jQuery("#popup1").addClass("show").find(".close").focus();
                         }, 400);
                     }
                 });
             });
         </script>
-        <script type="text/javascript" src="/assets/jquery.min.js" defer></script>
+        <script type="text/javascript" src="/assets/jquery.min.js" async></script>
         <script src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
     </body>
 </html>
