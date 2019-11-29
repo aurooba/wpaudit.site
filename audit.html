@@ -30,15 +30,6 @@
         
         <meta property="copyright" content="GPL License, created by Aurooba Ahmed">
         <link rel="shortcut icon" href="/assets/imgs/favicon.png">
-        <script>
-          (function (w,d,s,o,f,js,fjs) {
-          w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-          js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-          js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-          }(window, document, 'script', 'plausible', 'https://plausible.io/js/p.js'));
-
-          plausible('page')
-        </script>
     </head>
     <body>
         <a class="skip-link screen-reader-text" href="#main">Skip to content (press enter)</a>
@@ -92,5 +83,20 @@
             <p class="smaller">Have a suggestion? PR it on <a href="https://github.com/aurooba/wpaudit.site">GitHub</a>!</p>
         </footer>
         <script src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+        <!-- Fathom - simple website analytics - https://usefathom.com -->
+        <script>
+        (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+        (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+        })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+        fathom('set', 'siteId', 'PKKAQXIH');
+        fathom('trackPageview');
+        </script>
+        <!-- / Fathom -->
     </body>
 </html>
