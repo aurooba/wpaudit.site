@@ -11,6 +11,9 @@ header.site-header {
             width: 100%;
         }
     }
+    p:last-child {
+        margin-bottom: 0;
+    }
     .button-wrapper {
         padding-bottom: 0.5rem;
     }
@@ -29,13 +32,19 @@ header.site-header {
 }
 
 main {
-    margin-top: 10rem;
+    margin-top: 7rem;
     padding: 0 1rem;
 }
 
 @media only screen and (min-width: 500px) {
     main {
         padding: 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        margin-top: 11rem;
     }
 }
 
