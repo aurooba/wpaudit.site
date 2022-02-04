@@ -1,68 +1,67 @@
 .section-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3rem 0 1rem 0;
-    &:after {
-        content: 'hide';
-        font-size: 18px;
-//        color: #B1B1B1;
-        opacity: 0.6;
-        padding: 0.5rem 1rem;
-        transition: 0.5s ease all;
-    }
-    span {
-        margin: 0;
-        font-size: 1.17em;
-        font-weight: bold;
-    }
-    &:hover {
-        &:after {
-            cursor: pointer;
-            background: #fff;
-            opacity: 0.8;
-        }
-
-    }
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 3rem 0 1rem 0;
+	&:after {
+		content: "hide";
+		font-size: 18px;
+		//        color: #B1B1B1;
+		opacity: 0.6;
+		padding: 0.5rem 1rem;
+		transition: 0.5s ease all;
+	}
+	span {
+		margin: 0;
+		font-size: 1.17em;
+		font-weight: bold;
+	}
+	&:hover {
+		&:after {
+			cursor: pointer;
+			background: #fff;
+			opacity: 0.8;
+		}
+	}
 }
 
 input.section:focus + label.section-header:after {
-    background: #fff;
+	background: #fff;
 }
 
 input.section:checked + label.section-header:after {
-    content: 'show';
+	content: "show";
 }
 
 input#formatting-seo:checked ~ section.formatting,
 input#performance:checked ~ section.performance,
 input#a11y:checked ~ section.a11y,
 input#security:checked ~ section.security,
-{
-    display: none;
+input#privacy:checked ~ section.privacy {
+	display: none;
 }
 
 section.formatting,
 section.performance,
 section.a11y,
-section.security {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 50px;
-    p {
-        margin-left: 0;
-    }
-    
+section.security,
+section.privacy {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 50px;
+	p {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 850px) {
-    section.formatting,
-    section.performance,
-    section.a11y,
-    section.security {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-gap: 50px;
-
-    }
+	section.formatting,
+	section.performance,
+	section.a11y,
+	section.security,
+	section.privacy {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		grid-gap: 50px;
+	}
 }
