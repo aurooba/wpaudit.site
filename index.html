@@ -8,7 +8,7 @@
         <meta name="title" content="WPAudit – WordPress Website Audit Checklist">
         <meta name="description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
         <meta name="keywords" content="wordpress checklist, wordpress audit, site audit, web performance checklist, web accessibility checklist, html checklist, css checklit, javascript checklist, frontend checklist, developer checklist">
-        
+
         <link rel="preload" href="css/webfonts.css" as="style">
         <link rel="stylesheet" href="css/webfonts.css">
         <link rel="stylesheet" href="css/style.css">
@@ -27,7 +27,7 @@
         <meta property="twitter:title" content="WordPress Website Audit Checklist">
         <meta property="twitter:description" content="Quickly audit your WordPress website. A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security. Best used before a launch or on a monthly basis.">
         <meta property="twitter:image" content="https://wpaudit.site/assets/imgs/logo.jpg">
-        
+
         <meta property="copyright" content="GPL License, created by Aurooba Ahmed">
         <link rel="shortcut icon" href="/assets/imgs/favicon.png">
     </head>
@@ -120,9 +120,18 @@
                         <li><a rel="noopener" target="_blank" href="https://adrianroselli.com/2015/10/dont-disable-zoom.html">Don't Disable Zoom</a> – read this article on why disabling zoom is bad bad bad.</li>
                     </ul>
                 </article>
+				<article class="checklist-item">
+                    <input id="indexsite" type="checkbox">
+                    <label for="indexsite" class="tickoff"><span role="heading" aria-level="4">Encourage search engines to index the site </span></label>
+                    <p>Did you <strong>turn off that setting WordPress General settings</strong>that discourages search engines to index the site? Not sure? Better double check!</p>
+                    <ul>
+                        <li><a rel="noopener" target="_blank" href="https://kinsta.com/blog/discourage-search-engines-from-indexing-this-site/">Discourage Search Engines from Indexing This Site: What It Means and How to Use It</a> – a brief overview over on the Kinsta blog on what that WordPress setting means and what it impacts</li>
+                        <li><a rel="noopener" target="_blank" href="https://wpshout.com/better-alternatives-discourage-search-engines-wordpress/">Better alternatives to “Discourage search engines” in WordPress</a> – here are other ways you can discourage search engines without using the handy little WordPress checkbox.</li>
+                    </ul>
+                </article>
 
             </section>
-            
+
             <input id="performance" type="checkbox" class="section">
             <label for="performance" class="section-header"><span role="heading" aria-level="3">Performance</span></label>
             <section class="performance" aria-label="Performance Checklist">
@@ -265,7 +274,7 @@
                 <article class="checklist-item">
                     <input id="skip" type="checkbox">
                     <label for="skip" class="tickoff"><span role="heading" aria-level="4">Skip to content link, please!</span></label>
-                    <p>Make sure you have a <em>skip to content</em> link that shows up when that link comes into focus.</p> 
+                    <p>Make sure you have a <em>skip to content</em> link that shows up when that link comes into focus.</p>
                     <p>Doesn't have to be super fancy. Check the source for the one on this page – super simple, takes 2 minutes to implement.</p>
                     <ul>
                         <li><a rel="noopener" target="_blank" href="https://webaim.org/techniques/skipnav/">Skip to content techniques</a></li>
