@@ -15,5 +15,4 @@ Got a suggestion?
 You have a suggestion to make WordPress websites more awesome? PR it!
 
 ### Contributors
-A host of folks have helped me improve this checklist and make it even better:
-(will be added with v2 release)
+A host of folks have helped me improve this checklist and make it even better. Thank you to all of those lovely folks!
