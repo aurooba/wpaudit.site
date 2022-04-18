@@ -1,8 +1,8 @@
 WPAudit.site
 ===================================
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-#### v0.6.1
-#### Last updated: March 10, 2022
+#### v0.6.2
+#### Last updated: April 18, 2022
 #### Created by Aurooba Ahmed
 
 A helpful checklist to audit your website for formatting, WordPress specific optimization, accessibility, performance, and security.
