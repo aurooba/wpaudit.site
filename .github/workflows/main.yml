@@ -1,7 +1,5 @@
 on:
   repository_dispatch: # run manually
-    branches:
-        - 'master'
 
 name: Broken Link Check
 jobs:
