@@ -440,8 +440,8 @@
 				</ul>
 			</article>
 			<article class="checklist-item">
-				<input id="testforms" type="checkbox">
-				<label for="testforms" class="tickoff"><span role="heading" aria-level="4">Do you have an Accessibility Statement? (and is it current?)</span></label>
+				<input id="a11ystatement" type="checkbox">
+				<label for="a11ystatement" class="tickoff"><span role="heading" aria-level="4">Do you have an Accessibility Statement? (and is it current?)</span></label>
 				<p>Typically found in the footer, an accessibility statement is a fantastic way to communicate how folks can  get help if they have problems using your site.</p> <p>While not legally required for most websites (although if you're in the public sector, you almost certainly do need one!), having one demonstrates your commitment to accessibility and is a solid informational page to have on your website.</p>
 				<ul>
 					<li><a rel="noopener" target="_blank"
@@ -717,16 +717,28 @@
 	</script>
 
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			jQuery(".checklist-item input[type='checkbox']").change(function () {
-				var a = jQuery(".checklist-item input[type='checkbox']");
-				if (a.length == a.filter(":checked").length) {
-					setTimeout(function () {
-						jQuery("#popup1").addClass("show").find(".close").focus();
-					}, 400);
-				}
-			});
-		});
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all checklist-item checkboxes
+    const checkboxes = document.querySelectorAll(".checklist-item input[type='checkbox']");
+
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', function () {
+            // Check if all checkboxes are checked
+            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+
+            if (allChecked) {
+                setTimeout(function () {
+                    const popup = document.getElementById("popup1");
+                    popup.classList.add("show");
+                    const closeButton = popup.querySelector(".close");
+                    if (closeButton) {
+                        closeButton.focus();
+                    }
+                }, 400);
+            }
+        });
+    });
+});
 	</script>
 
 	<script src="https://instant.page/3.0.0" type="module" defer
